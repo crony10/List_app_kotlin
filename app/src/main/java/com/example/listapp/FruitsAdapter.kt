@@ -12,6 +12,7 @@ class FruitsAdapter(
     private val fruit: ArrayList<Fruits>
 ) : RecyclerView.Adapter<FruitsAdapter.FruitViewHolder>() {
 
+
     class FruitViewHolder(item: View) : RecyclerView.ViewHolder(item){
         val tvName: TextView = item.findViewById<TextView>(R.id.tvName)
         val tvOrigin: TextView = item.findViewById<TextView>(R.id.tvOrigin)
