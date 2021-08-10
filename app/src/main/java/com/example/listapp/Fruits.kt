@@ -8,18 +8,22 @@ data class Fruits(
     val quantity: Int
 ) {
 
+//    https://blog.mindorks.com/companion-object-in-kotlin
     companion object {
+        @JvmField
         val FRUIT_NAMES = arrayOf(
             "apple", "apple", "apple", "apple",
             "apple", "apple", "apple", "apple"
         )
 
+        @JvmField
         val ORIGINS = arrayOf(
             "Anand", "Anand", "Anand", "Anand",
             "Anand", "Anand", "Anand", "Anand"
         )
 
-        fun getRandomFruits(n: Int) {
+        @JvmStatic
+        fun getRandomFruits(n: Int): ArrayList<Fruits> {
             val fruitArray = ArrayList<Fruits>(n)
 
             for (i in 1..n) {
@@ -31,6 +35,7 @@ data class Fruits(
                         )
                 )
             }
+            return fruitArray
         }
     }
 }

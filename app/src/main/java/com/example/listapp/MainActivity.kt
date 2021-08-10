@@ -8,6 +8,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        Fruits.getRandomFruits(100)
+        val fruits = Fruits.getRandomFruits(100)
+        val fruitAdapter = FruitsAdapter(fruits)
     }
 }
