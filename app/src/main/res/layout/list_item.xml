@@ -27,6 +27,7 @@
             android:id="@+id/tvOrigin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#FF9800"
             android:textSize="20sp"
             android:text="origin"/>
 
@@ -34,6 +35,7 @@
             android:id="@+id/tvQuantity"
             android:layout_width="match_parent"
             android:textSize="20sp"
+            android:textColor="@color/teal_200"
             android:layout_height="wrap_content"
             android:text="200"/>
 

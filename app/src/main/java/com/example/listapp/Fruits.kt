@@ -10,16 +10,18 @@ data class Fruits(
 
 //    https://blog.mindorks.com/companion-object-in-kotlin
     companion object {
+
+//    https://blog.mindorks.com/jvmstatic-jvmoverloads-and-jvmfield-in-kotlin
         @JvmField
         val FRUIT_NAMES = arrayOf(
-            "apple", "apple", "apple", "apple",
-            "apple", "apple", "apple", "apple"
+            "apple", "orange", "banana", "kiwi",
+            "grapes", "pomegrenate", "strawberry", "pineapple"
         )
 
         @JvmField
         val ORIGINS = arrayOf(
-            "Anand", "Anand", "Anand", "Anand",
-            "Anand", "Anand", "Anand", "Anand"
+            "Anand", "baroda", "c", "d",
+            "r", "g", "m", "n"
         )
 
         @JvmStatic
